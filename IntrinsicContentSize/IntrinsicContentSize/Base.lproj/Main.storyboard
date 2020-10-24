@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntrinsicContentSize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t6-XI-ynT">
+                                <rect key="frame" x="159" y="94" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrW-0D-FnX">
+                                <rect key="frame" x="156" y="165" width="102" height="30"/>
+                                <state key="normal" title="TEST BUTTON"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pT9-ro-LzW">
+                                <rect key="frame" x="48" y="245" width="318" height="31"/>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPa-sL-InW" customClass="IntrinsicContentView" customModule="IntrinsicContentSize" customModuleProvider="target">
+                                <rect key="frame" x="157" y="325" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.30019834639999998" green="0.3520326614" blue="0.4103175402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pT9-ro-LzW" secondAttribute="trailing" constant="50" id="IY0-FO-3xg"/>
+                            <constraint firstItem="nrW-0D-FnX" firstAttribute="top" secondItem="5t6-XI-ynT" secondAttribute="bottom" constant="50" id="N9z-Sp-R3Q"/>
+                            <constraint firstItem="LPa-sL-InW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oaw-DD-5bj"/>
+                            <constraint firstItem="5t6-XI-ynT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Z2p-k2-IRf"/>
+                            <constraint firstItem="LPa-sL-InW" firstAttribute="top" secondItem="pT9-ro-LzW" secondAttribute="bottom" constant="50" id="Zoh-d4-93C"/>
+                            <constraint firstItem="pT9-ro-LzW" firstAttribute="top" secondItem="nrW-0D-FnX" secondAttribute="bottom" constant="50" id="aa9-8W-0WH"/>
+                            <constraint firstItem="5t6-XI-ynT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fcA-MZ-cyh"/>
+                            <constraint firstItem="pT9-ro-LzW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rgu-vI-x5r"/>
+                            <constraint firstItem="nrW-0D-FnX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ztM-nh-JbE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="82"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="LPa-sL-InW">
+            <size key="intrinsicContentSize" width="100" height="50"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
