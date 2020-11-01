@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleLoginView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-W5-Usx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O6R-pw-WY3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="843.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swi-xL-1qX">
+                                                <rect key="frame" x="87" y="52" width="240" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="xdJ-80-nhK"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Any-ti-v6R">
+                                                <rect key="frame" x="166.5" y="110" width="81" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="750" image="Log-In" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-YK-goB">
+                                                <rect key="frame" x="62" y="159" width="290" height="290"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CJh-YK-goB" secondAttribute="height" multiplier="1:1" id="t6h-rU-yCV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="오토레이아웃 로그인 화면입니다 아이디와 패스워드를 입력하세요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIS-Xo-39S">
+                                                <rect key="frame" x="62" y="457" width="290" height="40.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sF4-Qa-urE">
+                                                <rect key="frame" x="87" y="505.5" width="240" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디를 입력하세요" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-lN-vvg">
+                                                <rect key="frame" x="62" y="563.5" width="290" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드를 입력하세요" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2o3-YB-P2T">
+                                                <rect key="frame" x="62" y="605.5" width="290" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8To-lS-Boh">
+                                                <rect key="frame" x="87" y="647.5" width="240" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6AK-QY-XPy">
+                                                <rect key="frame" x="96" y="705.5" width="222.5" height="31"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYi-s3-7xt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 정보 기억하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeT-G7-Imt">
+                                                        <rect key="frame" x="57" y="3.5" width="165.5" height="24"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="oos-wM-Mw0">
+                                                <rect key="frame" x="140" y="744.5" width="134" height="33"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCa-Sl-q0L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="로그인"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33G-A4-BZg">
+                                                        <rect key="frame" x="75" y="0.0" width="59" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <state key="normal" title="회원가입"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gad-hI-uuy">
+                                                <rect key="frame" x="87" y="785.5" width="240" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LIS-Xo-39S" firstAttribute="leading" secondItem="CJh-YK-goB" secondAttribute="leading" id="8sq-ME-T9W"/>
+                                            <constraint firstItem="2cb-lN-vvg" firstAttribute="trailing" secondItem="LIS-Xo-39S" secondAttribute="trailing" id="BXA-11-39a"/>
+                                            <constraint firstItem="LIS-Xo-39S" firstAttribute="trailing" secondItem="CJh-YK-goB" secondAttribute="trailing" id="DZN-YZ-buO"/>
+                                            <constraint firstItem="gad-hI-uuy" firstAttribute="height" secondItem="Swi-xL-1qX" secondAttribute="height" id="coo-BN-CeQ"/>
+                                            <constraint firstItem="sF4-Qa-urE" firstAttribute="height" secondItem="Swi-xL-1qX" secondAttribute="height" id="e1T-Du-6xb"/>
+                                            <constraint firstItem="2o3-YB-P2T" firstAttribute="leading" secondItem="2cb-lN-vvg" secondAttribute="leading" id="jLy-a3-e04"/>
+                                            <constraint firstItem="2o3-YB-P2T" firstAttribute="trailing" secondItem="2cb-lN-vvg" secondAttribute="trailing" id="pYt-zy-np4"/>
+                                            <constraint firstItem="8To-lS-Boh" firstAttribute="height" secondItem="Swi-xL-1qX" secondAttribute="height" id="rhP-pA-8Ho"/>
+                                            <constraint firstItem="2cb-lN-vvg" firstAttribute="leading" secondItem="LIS-Xo-39S" secondAttribute="leading" id="u9j-63-eZj"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="O6R-pw-WY3" firstAttribute="top" secondItem="gD7-92-L2T" secondAttribute="top" id="hkn-CP-qZP"/>
+                                    <constraint firstItem="O6R-pw-WY3" firstAttribute="bottom" secondItem="gD7-92-L2T" secondAttribute="bottom" id="oQr-IN-Jke"/>
+                                    <constraint firstItem="O6R-pw-WY3" firstAttribute="trailing" secondItem="gD7-92-L2T" secondAttribute="trailing" id="ofK-4J-ADA"/>
+                                    <constraint firstItem="O6R-pw-WY3" firstAttribute="leading" secondItem="gD7-92-L2T" secondAttribute="leading" id="ttZ-5X-pCj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gD7-92-L2T"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rae-1l-tGy"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sQJ-W5-Usx" secondAttribute="bottom" id="4l0-Pm-sAs"/>
+                            <constraint firstItem="O6R-pw-WY3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="633-eH-j8o"/>
+                            <constraint firstItem="O6R-pw-WY3" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" priority="1" id="fJ3-kq-cee"/>
+                            <constraint firstAttribute="trailing" secondItem="sQJ-W5-Usx" secondAttribute="trailing" id="fxn-Be-rWz"/>
+                            <constraint firstItem="sQJ-W5-Usx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hlG-8P-Oie"/>
+                            <constraint firstItem="CJh-YK-goB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="jnR-tp-vqm"/>
+                            <constraint firstItem="sQJ-W5-Usx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zoz-WO-LNP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="LCa-Sl-q0L" collectionClass="NSMutableArray" id="JLt-5B-fjn"/>
+                        <outletCollection property="buttons" destination="33G-A4-BZg" collectionClass="NSMutableArray" id="Vde-hd-v5G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Log-In" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
